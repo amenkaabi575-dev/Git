@@ -1,15 +1,15 @@
 import java.util.Objects;
 
-public class Bus {
+public class Vehicle {
 
     private long id;
     private String brand;
     private String model;
 
-    public Bus() {
+    public Vehicle() {
     }
 
-    public Bus(long id, String brand, String model) {
+    public Vehicle(long id, String brand, String model) {
         this.id = id;
         this.brand = brand;
         this.model = model;
@@ -51,8 +51,8 @@ public class Bus {
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        Bus bus = (Bus) o;
-        return id == bus.id && Objects.equals(brand, bus.brand) && Objects.equals(model, bus.model);
+        Vehicle vehicle = (Vehicle) o;
+        return id == vehicle.id && Objects.equals(brand, vehicle.brand) && Objects.equals(model, vehicle.model);
     }
 
     @Override
